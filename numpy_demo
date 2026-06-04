@@ -1,0 +1,21 @@
+import numpy as np
+#Creating an array (Numpy has no commas in their array in output unlike pandas)
+prices = np.array([480000, 510000, 445000])
+print(prices)
+print("type:", type(prices))
+#Using generators-
+print(np.zeros(4))
+#Creating list giving start,stop,step details
+print(np.arange(0, 10, 2))
+#Creating list giving equally spaced nos. in a given range
+print(np.linspace(0, 100, 5))
+# To describe shape of data
+print("shape:", prices.shape) #matrix dimensions
+print("dtype:", prices.dtype)
+print("size:", prices.size) #no. of elements
+print("ndim:", prices.ndim) #no. of dimensions
+#How math is applied to whole array at once by vectors-
+print("prices / 1000:", prices / 1000)
+print("prices + 1000:", prices + 1000)
+discounted = prices * 0.9
+print("10% off:", discounted)
